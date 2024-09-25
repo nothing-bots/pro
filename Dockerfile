@@ -1,4 +1,4 @@
-FROM python:3.11.8-buster
+FROM python:3.11.8 -buster
 WORKDIR /app
 RUN chmod 777 /app
 RUN pip3 install -U pip
