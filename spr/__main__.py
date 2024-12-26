@@ -49,15 +49,15 @@ async def help_command(_, message: Message):
     kb = ikb(
         {
             "Help": "bot_commands",
-            "Repo": "https://github.com/Wahyu213/OkaeriSpamProtection",
-            "Add Me To Your Group": f"https://t.me/{BOT_USERNAME}?startgroup=new",
-            "Support Chat (for now)": "https://t.me/OkaeriUserbot",
+            "Updates": "@Botz_x_Hub",
+            "Add Me To Your Group": f"https://t.me/guardiann_bot?startgroup=new",
+            "Support Chat (for now)": "https://t.me/alice_x_group",
         }
     )
     mention = message.from_user.mention
     await message.reply_photo(
-        "https://telegra.ph/file/539d67285266e84f4b49b.png",
-        caption=f"Hi {mention}, I'm OkaeriSpamProtection,"
+        "https://telegra.ph/file/e34396ea8f1335cbed516-46c9fe56cf02d655f4.jpg",
+        caption=f"Hi {mention}, I'm Guardian Bot,"
         + " Choose An Option From Below.",
         reply_markup=kb,
     )
@@ -83,7 +83,7 @@ async def help_parser(name, keyboard=None):
             paginate_modules(0, HELPABLE, "help")
         )
     return (
-        f"Hello {name}, I'm OkaeriSpamProtection, I can protect "
+        f"Hello {name}, I'm Guardian Bot, I can protect "
         + "your group from Spam and NSFW media using "
         + "machine learning. Choose an option from below.",
         keyboard,
@@ -99,7 +99,7 @@ async def help_button(client, query: CallbackQuery):
     create_match = re.match(r"help_create", query.data)
     u = query.from_user.mention
     top_text = (
-        f"Hello {u}, I'm OkaeriSpamProtection, I can protect "
+        f"Hello {u}, I'm Guardian Bot, I can protect "
         + "your group from Spam and NSFW media using "
         + "machine learning. Choose an option from below."
     )
