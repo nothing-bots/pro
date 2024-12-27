@@ -7,9 +7,9 @@ from Python_ARQ import ARQ
 
 SESSION_NAME = "spr"
 DB_NAME = "db.sqlite3"
-API_ID = 6
-API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
-ARQ_API_URL = "https://thearq.tech"
+API_ID = 24620300
+API_HASH = "9a098f01aa56c836f2e34aee4b7ef963"
+ARQ_API_URL = "SMIYVL-BIHQXM-KMDVXJ-IQAURJ-ARQ"
 
 if exists("config.py"):
     from config import *
