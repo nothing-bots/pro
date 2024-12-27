@@ -48,7 +48,6 @@ async def edit_or_reply(msg: Message, **kwargs):
     filters.user(SUDOERS)
     & ~filters.forwarded
     & ~filters.via_bot
-    & ~filters.edited
     & filters.command("eval")
 )
 async def executor(client, message):
@@ -130,7 +129,6 @@ async def runtime_func_cq(_, cq):
     filters.user(SUDOERS)
     & ~filters.forwarded
     & ~filters.via_bot
-    & ~filters.edited
     & filters.command("sh"),
 )
 async def shellrunner(client, message):
